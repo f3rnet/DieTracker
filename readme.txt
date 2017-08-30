@@ -10,7 +10,7 @@ This code can easily be modified to accomodate a single die, or as many as you'd
 
 To begin:
 1. Spin up a database named "dnd". 
-2. Run dietrack.py.
+2. From the command line run: "python3 dietrack.py. --author --version --git" without the quotations.
 3. Select Manual or Auto depending on your use case.
 4. That's it!
 
