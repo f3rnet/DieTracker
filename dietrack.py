@@ -3,7 +3,24 @@ import datetime
 import random
 import radar
 from tablecreate import *
+import argparse
 
+#here are the arguments required
+#--author displays the author info / --git displays the github info / --version displays the version info
+parser = argparse.ArgumentParser()
+parser.add_argument("--author",
+	help="Displays the author information", action="store_true")
+parser.add_argument("--git",
+	help="Displays the github information", action="store_true")
+parser.add_argument("--version",
+	help="Displays the version information", action="store_true")
+args = parser.parse_args()
+if args.author:
+	print("D&D Dice Tracker by f3rnet.")
+if args.git:
+	print("https://github.com/f3rnet/DieTracker.")
+if args.version:
+	print("Version 1.0")
 
 #okay this is our intro menu that gives users their options. 
 def menu():
